@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0a0d08"/>
+<stop offset="45%" stop-color="#151b12"/>
+<stop offset="100%" stop-color="#080907"/>
+</linearGradient>
+<radialGradient id="fog" cx="70%" cy="40%" r="65%">
+<stop offset="0%" stop-color="#3a4a2a" stop-opacity="0.35"/>
+<stop offset="60%" stop-color="#1a2015" stop-opacity="0.1"/>
+<stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#c9d97a"/>
+<stop offset="100%" stop-color="#7a8f3a"/>
+</linearGradient>
+<radialGradient id="vig" cx="50%" cy="50%" r="75%">
+<stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+<stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
+</radialGradient>
+<linearGradient id="blood" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#8a1f1f" stop-opacity="0"/>
+<stop offset="50%" stop-color="#8a1f1f" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#8a1f1f" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="360" fill="url(#fog)"/>
+
+<!-- distant decayed trees -->
+<g stroke="#111a0d" stroke-width="3" fill="none" opacity="0.7">
+<path d="M900 360 L905 260 L890 220 M905 260 L925 230"/>
+<path d="M960 360 L955 230 L975 190 M955 230 L935 200"/>
+<path d="M1040 360 L1035 250 L1015 210 M1035 250 L1055 215"/>
+<path d="M1110 360 L1108 270 L1120 235"/>
+</g>
+
+<!-- ground fog band -->
+<rect x="0" y="290" width="1200" height="70" fill="#0d1408" opacity="0.6"/>
+
+<!-- scan lines -->
+<g stroke="#7a9a45" stroke-width="1" opacity="0.08">
+<line x1="0" y1="30" x2="1200" y2="30"/>
+<line x1="0" y1="70" x2="1200" y2="70"/>
+<line x1="0" y1="110" x2="1200" y2="110"/>
+<line x1="0" y1="150" x2="1200" y2="150"/>
+<line x1="0" y1="190" x2="1200" y2="190"/>
+<line x1="0" y1="230" x2="1200" y2="230"/>
+<line x1="0" y1="270" x2="1200" y2="270"/>
+<line x1="0" y1="310" x2="1200" y2="310"/>
+</g>
+
+<!-- ESP boxes / targets scattered right side -->
+<g>
+<rect x="800" y="70" width="90" height="130" fill="none" stroke="#c9d97a" stroke-width="1.5" opacity="0.55"/>
+<line x1="845" y1="70" x2="845" y2="45" stroke="#c9d97a" stroke-width="1" opacity="0.4"/>
+<circle cx="845" cy="38" r="5" fill="none" stroke="#c9d97a" stroke-width="1.2" opacity="0.6"/>
+<text x="895" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#c9d97a" opacity="0.55">HUNTER</text>
+<text x="895" y="156" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8fa85a" opacity="0.5">42m</text>
+</g>
+
+<g>
+<rect x="1000" y="130" width="70" height="105" fill="none" stroke="#c9603a" stroke-width="1.5" opacity="0.55"/>
+<line x1="1035" y1="130" x2="1035" y2="108" stroke="#c9603a" stroke-width="1" opacity="0.4"/>
+<circle cx="1035" cy="101" r="4.5" fill="none" stroke="#c9603a" stroke-width="1.2" opacity="0.6"/>
+<text x="1075" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c9603a" opacity="0.55">CLUE</text>
+</g>
+
+<g>
+<rect x="960" y="260" width="55" height="80" fill="none" stroke="#c9d97a" stroke-width="1.2" opacity="0.4"/>
+<circle cx="987" cy="253" r="3.5" fill="none" stroke="#c9d97a" stroke-width="1" opacity="0.5"/>
+</g>
+
+<!-- crosshair accent top right -->
+<g stroke="#c9d97a" stroke-width="1" opacity="0.35">
+<line x1="1130" y1="35" x2="1130" y2="60"/>
+<line x1="1117" y1="47" x2="1143" y2="47"/>
+<circle cx="1130" cy="47" r="14" fill="none"/>
+</g>
+
+<!-- blood accent stripe -->
+<rect x="0" y="196" width="1200" height="3" fill="url(#blood)"/>
+
+<!-- left vertical accent bar -->
+<rect x="60" y="115" width="4" height="150" fill="url(#glow)" opacity="0.8"/>
+
+<!-- vignette overlay -->
+<rect x="0" y="0" width="1200" height="360" fill="url(#vig)"/>
+
+<!-- Headline -->
+<text x="86" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="76" font-weight="bold" fill="#e8ecd0" textLength="900" lengthAdjust="spacingAndGlyphs">Hunt Showdown ESP</text>
+
+<!-- Tagline -->
+<text x="86" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="23" fill="#a9bb7d" textLength="760" lengthAdjust="spacingAndGlyphs">Renders player and clue overlays, one .exe — Hunt Showdown ESP</text>
+
+<!-- small skull-ish glyph decoration bottom left -->
+<g transform="translate(90,255)" opacity="0.5">
+<ellipse cx="0" cy="0" rx="16" ry="14" fill="none" stroke="#6b7a45" stroke-width="1.4"/>
+<circle cx="-6" cy="-1" r="2.6" fill="#6b7a45"/>
+<circle cx="6" cy="-1" r="2.6" fill="#6b7a45"/>
+<path d="M-7 8 L-3 12 L0 8 L3 12 L7 8" fill="none" stroke="#6b7a45" stroke-width="1.4"/>
+</g>
+</svg>
